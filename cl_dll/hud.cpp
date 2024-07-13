@@ -229,13 +229,13 @@ void CHud :: Init( void )
 	HOOK_MESSAGE( gHUD, Fog );
 
 
-	CVAR_CREATE( "_vgui_menus", "1", FCVAR_ARCHIVE | FCVAR_USERINFO );
+	CVAR_CREATE( "_vgui_menus", "0", FCVAR_ARCHIVE | FCVAR_USERINFO );
 	CVAR_CREATE( "_cl_autowepswitch", "1", FCVAR_ARCHIVE | FCVAR_USERINFO );
 	CVAR_CREATE( "_ah", "0", FCVAR_ARCHIVE | FCVAR_USERINFO );
 
 	// TODO remove hack later
-	CVAR_CREATE( "numericalmenu", "1", FCVAR_ARCHIVE );
-	CVAR_CREATE( "numericalmenu_clientonly", "1", FCVAR_ARCHIVE );
+	CVAR_CREATE( "numericalmenu", "0", FCVAR_ARCHIVE );
+	CVAR_CREATE( "numericalmenu_clientonly", "0", FCVAR_ARCHIVE );
 	CVAR_CREATE( "checkscoreboard", "1", FCVAR_ARCHIVE );
 	cscl_currentmap = CVAR_CREATE( "cscl_currentmap", "", 0 );
 	cscl_currentmoney = CVAR_CREATE( "cscl_currentmoney", "0", 0 );
